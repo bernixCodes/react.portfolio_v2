@@ -22,7 +22,7 @@
 
 
   --container-width-lg:76%;
-  --contain-width-md: 90%
+  --container-width-md: 90%
 
   --border-radius-1: 1.2rem;
   --border-radius-2: 0.8rem;
@@ -35,70 +35,71 @@ html{
   scroll-behavior: smooth;
 }
 
-body {
-   font-family: "Montserrat", sans-serif; 
-   line-height: 1.6;
-   font-size: 0.9rem;
-  }
+body{
+  font-family: "Montserrat", sans-serif; 
+  line-height: 1.6;
+  font-size: 0.9rem;
+ }
 
-  .container{
-    width: var(--container-width-lg);
-    margin-inline: auto;
-    max-width: 1920px;
-  }
 
-  section{
-    padding: 10rem 0;
-    background: var(--color-light);
-    transition: var(--transition);
-  }
-
-  section:nth-child(even){
-    background: var(--color-white);
-  }
-
-  section > h2{
-    text-align: center;
-  }
-
-  section > p{
-    text-align: center;
-    margin: 0.5rem auto 4rem;
-    width: 40%;
-  }
-
-  a{
-    color: var(--color-white);
-    transition: var(--transition);
-  }
-
-  h1,h2,h3,h4,h5,h6{
-    line-height: 1.1;
-    color: var(--color-black);
-  }
-
-  h1{
-    font-size: 3rem;
-  }
-  h2{
-    font-size: 2rem;
-  }
-
-  h3{
-    font-size: 1.6rem;
-  }
-  h4{
-    font-size: 1.1rem;
-  }
-
-  h5{
-    font-size: 0.95rem;
-  }
-h6{
-  font-size: 0.8rem;
+.container{
+  width: var(--container-width-lg);
+  margin-inline:auto;
+  max-width: 1920px;
 }
 
-.img{
+section{
+  padding: 10rem 0;
+  background: var(--color-light);
+  transition: var(--transition);
+}
+
+section:nth-child(even){
+  background: var(--color-white);
+}
+
+section > h2{
+  text-align: center;
+}
+
+section > p{
+  text-align: center;
+  margin: 0.5rem auto 4rem;
+  width: 40%;
+}
+
+a{
+  color: var(--color-white);
+  transition: var(--transition);
+}
+
+h1,h2,h3,h4,h5,h6{
+  line-height: 1.1;
+  color: var(--color-black);
+}
+
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.6rem;
+}
+h4{
+  font-size: 1.1rem;
+}
+
+h5{
+  font-size: 0.95rem;
+}
+h6{
+font-size: 0.8rem;
+}
+
+img{
   display: block;
   width: 100%;
   object-fit: cover;
@@ -149,4 +150,49 @@ h6{
 
 .btn.sm{
   padding: 0.5rem 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  body{
+    font-size: 1rem;
+  }
+  /* .container{
+    width: var(--contain-width-md);
+  } */
+  section{
+    padding: 8rem 0;
+  }
+
+  section > p{
+    width: 72%;
+    margin-bottom: 3rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 2.4rem;
+   
+  }
+  h2{
+    font-size: 1.8rem;
+  }
+  h3{
+    font-size: 1.4rem;
+  }
+  h4{
+    font-size: 1rem;
+  }
+
+  .btn{
+    padding: 0.6rem 1.5rem;
+  }
+
+  section > p{
+    width: var(--container-width-md);
+  }
+
 }
